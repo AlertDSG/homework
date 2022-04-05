@@ -10,6 +10,7 @@ type TypeMessage = {
 export const Message = (props: TypeMessage) => {
     return (
         <div className={css.message}>
+            <div className={css.imgBlock}></div>
             <img src={props.avatar} alt="avatar"/>
             <div className={css.content}>
                 <div className={css.text}>
