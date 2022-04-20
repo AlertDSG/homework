@@ -2,7 +2,7 @@
     width: 100px;
     border-radius: 10px;
     padding: 5px;
-    background: #282c34;
+    background: blue;
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -12,14 +12,14 @@
     transition: 0.25s;
     box-shadow: 0 0 0 1px white;
     padding: 5px;
-    background: #282c34;
+    background: blue;
     color: gold;
     cursor: pointer;
 }
 .default:disabled {
     box-shadow: none;
     padding: 5px;
-    background: #282c34;
+    background: blue;
     color: white;
     opacity: 0.5;
     cursor: inherit;

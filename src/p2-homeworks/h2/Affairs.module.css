@@ -3,16 +3,67 @@
     max-width: 400px;
     margin: 0 auto;
     display: flex;
+    border-radius: 10px;
 }
 .content {
     width: 100%;
 }
 .body {
     display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
     color: white;
-    gap: 20px;
-    justify-content: center;
 }
+
 .body div {
-    width: 100%;
+    width: 100px;
+}
+.btnDeleted {
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background: red;
+    padding: 5px;
+}
+.btnDeleted:hover {
+    transition: 0.25s;
+    box-shadow: 0 0 0 1px white;
+    color: gold;
+    background: red;
+    padding: 5px;
+    cursor: pointer;
+}
+.filter {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btnFilter{
+    display: block;
+    width: 80px;
+    border-radius: 10px;
+    padding: 5px;
+    height: 30px;
+    background: blue;
+    color: white;
+}
+.active{
+    opacity: 0.6;
+    display: block;
+    width: 80px;
+    border-radius: 10px;
+    padding: 5px;
+    background: blue;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
+.btnFilter:hover {
+    transition: 0.25s;
+    box-shadow: 0 0 0 1px white;
+    padding: 5px;
+    background: blue;
+    color: gold;
+    cursor: pointer;
 }

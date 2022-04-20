@@ -1,6 +1,7 @@
 import React from 'react'
 import {AffairType} from "./HW2";
 import css from './Affairs.module.css'
+import Button from './Button';
 
 type AffairPropsType = {
     // key не нужно типизировать
@@ -15,11 +16,12 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div className={css.content}>
-            <button onClick={deleteCallback}>X</button>
+
             <div className={css.body}>
-                <div>{props.affair._id}</div>
-                <div>{props.affair.name}</div>
-                <div>{props.affair.priority}</div>
+                <div className={css.task}>{props.affair.name}</div>
+                <div className={css.task}>{props.affair.priority}</div>
+                <div><Button className={css.btnDeleted} children={'delete'} onClick={deleteCallback}/></div>
+                {/*<button onClick={deleteCallback}>X</button>*/}
             </div>
         </div>
     )
