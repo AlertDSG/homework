@@ -23,3 +23,7 @@
 .active {
     color: gold;
 }
+.error {
+    text-align: center;
+    color: darkred;
+}
