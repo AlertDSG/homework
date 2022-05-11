@@ -16,15 +16,20 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        // onChange, onChangeOption
+        onChange && onChange(e);
+        onChangeOption && onChangeOption(e.target.name)
     }
 
 
-    const mappedOptions: any[] = options ? options.map((o, i) => ( // map options with key
+    const mappedOptions: any[] = options ? options.map((o, i) => (
         <label key={name + '-' + i}>
             <input
-                type={'radio'}
-                // name, checked, value, onChange
+                type="radio"
+                name={o}
+                value={value}
+                checked={value === o}
+                onChange={onChangeCallback}
+                {...restProps}
             />
             {o}
         </label>
