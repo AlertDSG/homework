@@ -1,0 +1,17 @@
+.wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+select {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: #c6c2c2;
+    opacity: 0.5;
+}
+select:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background: white;
+}
