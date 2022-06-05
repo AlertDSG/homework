@@ -3,13 +3,38 @@ import HW7 from "../../h7/HW7";
 import HW8 from "../../h8/HW8";
 import s from "../../h8/HW8.module.css"
 import HW9 from "../../h9/HW9";
+import HW10 from "../../h10/HW10";
+import {useSelector} from "react-redux";
+import {AppStoreType} from "../../h10/bll/store";
+import {initialStateType} from "../../h10/bll/loadingReducer";
+import preloader from "../../../Gear-0.2s-200px.svg";
+import style from '../../h10/HW10.module.css'
 
 const Junior = () => {
+    const status = useSelector<AppStoreType, initialStateType>(state => state.loading)
+    const loading = status ? status.loading : false
     return (
-        <div className={s.wrapper }>
-            <HW7/>
-            <HW8/>
-            <HW9/>
+        <div className={s.wrapper}>
+            {loading
+
+                ?
+
+                <div className={style.preloaderBlock}>
+                    <img src={preloader} alt="preloader"/>
+                </div>
+
+                :
+
+                <div>
+                    <HW7/>
+                    <HW8/>
+                    <HW9/>
+                    <HW10/>
+                </div>
+
+
+            }
+
         </div>
     )
 }
