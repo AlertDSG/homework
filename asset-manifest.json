@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/homework/static/css/main.d2859b36.css",
-    "main.js": "/homework/static/js/main.cbc037b1.js",
+    "main.css": "/homework/static/css/main.3dc41ae0.css",
+    "main.js": "/homework/static/js/main.a41fcb82.js",
+    "static/media/Gear-0.2s-200px.svg": "/homework/static/media/Gear-0.2s-200px.c98f7bd0524aa0634a82bb0d1054788d.svg",
     "index.html": "/homework/index.html",
-    "main.d2859b36.css.map": "/homework/static/css/main.d2859b36.css.map",
-    "main.cbc037b1.js.map": "/homework/static/js/main.cbc037b1.js.map"
+    "main.3dc41ae0.css.map": "/homework/static/css/main.3dc41ae0.css.map",
+    "main.a41fcb82.js.map": "/homework/static/js/main.a41fcb82.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2859b36.css",
-    "static/js/main.cbc037b1.js"
+    "static/css/main.3dc41ae0.css",
+    "static/js/main.a41fcb82.js"
   ]
 }
