@@ -9,6 +9,7 @@ import {AppStoreType} from "../../h10/bll/store";
 import {initialStateType} from "../../h10/bll/loadingReducer";
 import preloader from "../../../Gear-0.2s-200px.svg";
 import style from '../../h10/HW10.module.css'
+import HW11 from "../../h11/HW11";
 
 const Junior = () => {
     const status = useSelector<AppStoreType, initialStateType>(state => state.loading)
@@ -30,6 +31,7 @@ const Junior = () => {
                     <HW8/>
                     <HW9/>
                     <HW10/>
+                    <HW11/>
                 </div>
 
 
