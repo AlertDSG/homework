@@ -16,7 +16,6 @@ function HW12() {
     }
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         dispatch(changeTextColorAC(e.currentTarget.value))
-        console.log(e.currentTarget.value)
     }
 
     return (
