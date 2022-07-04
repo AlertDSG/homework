@@ -17,10 +17,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 ) => {
 
     const handleChange = (event: any, newValue: any) => {
-        if (values[1] > (values[0] + 1)) {
             onChangeRange && onChangeRange(newValue)
-        }
-
     };
 
     return (

@@ -21,3 +21,9 @@
 .some-text {
     color: darkslateblue;
 }
+.center{
+    text-align: center;
+}
+.select{
+    margin-left: 15px;
+}
